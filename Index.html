@@ -1,232 +1,176 @@
 <!DOCTYPE html>
-    <html>
+<html>
 <head>
-  <title>Platillos Típicos de México</title>
+    <meta charset="UTF-8" />
+    <title>Platillos de México</title>
+    <style>
+        body {
+            background-color: #5E7290; /* Fondo para el contraste */
+            font-family: Georgia, serif;
+            color: white;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #D32F2F;
+        }
+        marquee {
+            background-color: red;
+            padding: 10px;
+            font-family: Georgia, serif;
+            font-size: 1.2em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+            text-align: left;
+        }
+        /* Colores para los estados */
+        .aguascalientes { color: #FF5722; }
+        .bajaCalifornia { color: #D32F2F; }
+        .bajaCaliforniaSur { color: #4CAF50; }
+        .campeche { color: #1976D2; }
+        .chiapas { color: #FFEB3B; }
+        .chihuahua { color: #9C27B0; }
+        .coahuila { color: #0288D1; }
+        .colima { color: #7B1FA2; }
+        .durango { color: #9C27B0; }
+        .guanajuato { color: #FF5722; }
+        .guerrero { color: #FFEB3B; }
+        .hidalgo { color: #D32F2F; }
+        .jalisco { color: #0288D1; }
+        .mexico { color: #4CAF50; }
+        .michoacan { color: #FF5722; }
+        .morelos { color: #7B1FA2; }
+        .nayarit { color: #9C27B0; }
+        .nuevoLeon { color: #FFEB3B; }
+        .oaxaca { color: #7B1FA2; }
+        .puebla { color: #7B1FA2; }
+        .queretaro { color: #D32F2F; }
+        .quintanaRoo { color: #0288D1; }
+        .sanLuisPotosi { color: #7B1FA2; }
+        .sinaloa { color: #FF5722; }
+        .sonora { color: #9C27B0; }
+        .tabasco { color: #FFEB3B; }
+        .tamaulipas { color: #0288D1; }
+        .tlaxcala { color: #7B1FA2; }
+        .yucatan { color: #D32F2F; }
+        .zacatecas { color: #D32F2F; }
+
+        /* Estilo para listas dentro de las celdas */
+        td ul {
+            list-style-type: circle;
+            padding-left: 20px;
+            margin: 0;
+        }
+        /* Responsividad */
+        @media (max-width: 768px) {
+            table, th, td {
+                display: block;
+                width: 100%;
+            }
+            th {
+                background-color: transparent;
+                font-weight: bold;
+                margin-top: 15px;
+            }
+        }
+    </style>
 </head>
-<body bgcolor="#A59EB9""
-  <h1 style="text-align: center; color: #black;">Platillos Típicos de los 32 Estados de México</h1>
-  <font color="WHITE" face="georgia" size="4">
-    <marquee direction="left" style="background:RED">Estados y sus platillos típicos</marquee>
-  </font>
-  <p align="center">
-    <font face="monaco" size="2">
-      <table border="1" align="center">
-        <tr>
-          <th>Estado</th>
-          <th>Platillo Típico</th>
-          <th>Ingredientes</th>
-          <th>Historia</th>
-          <th>Dato Curioso</th>
-        </tr>
-        <tr>
-          <td>Aguascalientes</td>
-          <td>Carne en su jugo</td>
-          <td>Carne de res en trozos, tocino, caldo de res, frijoles de la olla, cilantro, cebolla, ajo, chiles verdes, sal y pimienta.</td>
-          <td>Aunque originaria de Jalisco, este platillo es muy popular en Aguascalientes.</td>
-          <td>Su sabor mejora si se deja reposar antes de servir.</td>
-        </tr>
-        <tr>
-          <td>Baja California</td>
-          <td>Tacos de pescado</td>
-          <td>Filetes de pescado, harina, cerveza, huevo, sal, pimienta, tortillas de maíz, col rallada, crema, salsa de mayonesa con chipotle, limón.</td>
-          <td>Nacieron en Ensenada, influenciados por la cocina japonesa.</td>
-          <td>En Ensenada se celebra un festival de tacos de pescado.</td>
-        </tr>
-        <tr>
-          <td>Baja California Sur</td>
-          <td>Machaca</td>
-          <td>Carne seca de res o venado, jitomate, cebolla, chile serrano, huevo (opcional), ajo, aceite o manteca.</td>
-          <td>Técnica de conservación de carne utilizada por los habitantes del desierto.</td>
-          <td>Se acompaña con tortillas de harina y frijoles refritos.</td>
-        </tr>
-      </table>
-      <br><br>
-      </li>
+<body>
+    <h1>Platillos Típicos de los 32 Estados de México</h1>
+    <marquee>Estados y sus platillos típicos</marquee>
 
-                <li><b style="color:#1976D2;">Campeche:</b> <strong>Pan de Cazón</strong>  
-                    <br><b>Ingredientes:</b> Cazón (tiburón), tortillas de maíz, frijoles negros refritos, jitomate, chile habanero, cebolla, ajo, epazote.  
-                    <br><b>Historia:</b> Inspirado en la cocina maya, combina ingredientes autóctonos con influencias españolas.  
-                    <br><b>Dato curioso:</b> Es considerado la "lasaña mexicana" por sus capas.  
-                </li>
+    <!-- Menú de enlaces -->
+    <nav>
+        <ul>
+            <li><a href="#seccion1">Video</a></li>
+            <li><a href="#seccion2">Foto</a></li>
+            <li><a href="#seccion3">Audio</a></li>
+        </ul>
+    </nav>
 
-                <li><b style="color:#FFEB3B;">Chiapas:</b> <strong>Tacos de cochito</strong>  
-                    <br><b>Ingredientes:</b> Carne de cerdo, achiote, naranja agria, chiles guajillo y ancho, ajo, comino, sal y pimienta, tortillas de maíz.  
-                    <br><b>Historia:</b> Similar a la cochinita pibil, pero con un toque más especiado y jugoso.  
-                    <br><b>Dato curioso:</b> Se preparan en grandes cantidades para festividades.  
-                </li>
+    <!-- Tabla con contenido -->
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>Platillo</th>
+                <th>Ingredientes</th>
+                <th>Historia</th>
+                <th>Dato curioso</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="aguascalientes"><b>Aguascalientes</b></td>
+                <td><b>Carne en su jugo</b></td>
+                <td>Carne de res en trozos, tocino, caldo de res, frijoles de la olla, cilantro, cebolla, ajo, chiles verdes, sal y pimienta.</td>
+                <td>Aunque originaria de Jalisco, este platillo es muy popular en Aguascalientes.</td>
+                <td>Su sabor mejora si se deja reposar antes de servir.</td>
+            </tr>
+            <tr>
+                <td class="bajaCalifornia"><b>Baja California</b></td>
+                <td><b>Tacos de pescado</b></td>
+                <td>Filetes de pescado, harina, cerveza, huevo, sal, pimienta, tortillas de maíz, col rallada, crema, salsa de mayonesa con chipotle, limón.</td>
+                <td>Nacieron en Ensenada, influenciados por la cocina japonesa.</td>
+                <td>En Ensenada se celebra un festival de tacos de pescado.</td>
+            </tr>
+            <tr>
+                <td class="bajaCaliforniaSur"><b>Baja California Sur</b></td>
+                <td><b>Machaca</b></td>
+                <td>Carne seca de res o venado, jitomate, cebolla, chile serrano, huevo (opcional), ajo, aceite o manteca.</td>
+                <td>Técnica de conservación de carne utilizada por los habitantes del desierto.</td>
+                <td>Se acompaña con tortillas de harina y frijoles refritos.</td>
+            </tr>
+            <tr>
+                <td class="campeche"><b>Campeche</b></td>
+                <td><b>Pan de Cazón</b></td>
+                <td>Cazón (tiburón), tortillas de maíz, frijoles negros refritos, jitomate, chile habanero, cebolla, ajo, epazote.</td>
+                <td>Inspirado en la cocina maya, combina ingredientes autóctonos con influencias españolas.</td>
+                <td>Es considerado la "lasaña mexicana" por sus capas.</td>
+            </tr>
+            <!-- Agrega más filas según sea necesario -->
+            <!-- Ejemplo de una fila adicional -->
+            <tr>
+                <td class="chiapas"><b>Chiapas</b></td>
+                <td><b>Tacos de cochito</b></td>
+                <td>Carne de cerdo, achiote, naranja agria, chiles guajillo y ancho, ajo, comino, sal y pimienta, tortillas de maíz.</td>
+                <td>Similar a la cochinita pibil, pero con un toque más especiado y jugoso.</td>
+                <td>Se preparan en grandes cantidades para festividades.</td>
+            </tr>
+        </tbody>
+    </table>
 
-                <li><b style="color:#9C27B0;">Chihuahua:</b> <strong>Chile con carne</strong>  
-                    <br><b>Ingredientes:</b> Carne de res, chiles secos, jitomate, cebolla, ajo, comino, sal y pimienta.  
-                    <br><b>Historia:</b> Popular entre los vaqueros del norte.  
-                    <br><b>Dato curioso:</b> En EE.UU., el "chili" deriva de este platillo.  
-                </li>
+    <!-- Sección de Video -->
+    <section id="seccion1">
+        <h2>Video</h2>
+        <video controls width="600">
+            <source src="México.mp4" type="video/mp4" />
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+    </section>
 
-                <li><b style="color:#0288D1;">Coahuila:</b> <strong>Cabrito</strong>  
-                    <br><b>Ingredientes:</b> Cabrito (chivo joven), ajo, cebolla, sal, pimienta, orégano, limón, vino blanco o cerveza.  
-                    <br><b>Historia:</b> Traído por los colonizadores españoles.  
-                    <br><b>Dato curioso:</b> Es un platillo emblemático del noreste.  
-                </li>
+    <!-- Sección de Foto -->
+    <section id="seccion2">
+        <h2>Foto</h2>
+        <img src="Taco.jpeg" height="150" alt="Platillo de tacos" />
+    </section>
 
-                <li><b style="color:#7B1FA2;">Colima:</b> <strong>Sopa de lima</strong>  
-                    <br><b>Ingredientes:</b> Pechuga de pollo, lima agria, jitomate, cebolla, ajo, chile xcatic, cilantro, tortillas fritas en tiras.  
-                    <br><b>Historia:</b> Se dice que fue creado por los mayas, pero su popularidad creció en Colima.  
-                    <br><b>Dato curioso:</b> Se le da el nombre "lima" por el sabor cítrico que aporta.  
-                </li>
-
-                <li><b style="color:#9C27B0;">Durango:</b> <strong>Tacos de asado</strong>  
-                    <br><b>Ingredientes:</b> Carne de cerdo, chiles guajillo y ancho, jitomate, ajo, cebolla, piloncillo, comino, tortillas de maíz.  
-                    <br><b>Historia:</b> Su origen proviene de la tradición ganadera de Durango.  
-                    <br><b>Dato curioso:</b> Son acompañados comúnmente con salsa de chile rojo.  
-                </li>
-6
-                <li><b style="color:#FF5722;">Guanajuato:</b> <strong>Enchiladas mineras</strong>  
-                    <br><b>Ingredientes:</b> Tortillas de maíz, chiles guajillo, jitomate, ajo, cebolla, queso ranchero, zanahorias y papas cocidas, crema y lechuga.  
-                    <br><b>Historia:</b> Platillo originario de las minas de Guanajuato, preparado por mineros.  
-                    <br><b>Dato curioso:</b> Se preparan con un toque más suave en comparación con otras enchiladas.  
-                </li>
-
-                <li><b style="color:#FFEB3B;">Guerrero:</b> <strong>Pozole</strong>  
-                    <br><b>Ingredientes:</b> Maíz cacahuazintle, carne de cerdo o pollo, chiles guajillo y ancho, ajo, cebolla, orégano, rábanos, lechuga, limón.  
-                    <br><b>Historia:</b> De origen prehispánico, el pozole se preparaba para ceremonias.  
-                    <br><b>Dato curioso:</b> En Guerrero se sirve con carne de cerdo o pollo, dependiendo de la región.  
-                </li>
-
-                <li><b style="color:#D32F2F;">Hidalgo:</b> <strong>Barbacoa</strong>  
-                    <br><b>Ingredientes:</b> Carne de borrego, pencas de maguey, ajo, cebolla, chiles guajillo y pasilla, pimienta, sal, caldo de barbacoa (con garbanzos y arroz opcional).  
-                    <br><b>Historia:</b> De origen prehispánico, se cocinaba en un hoyo en la tierra.  
-                    <br><b>Dato curioso:</b> El uso del maguey como envoltura le da un sabor único.  
-                </li>
-
-                <li><b style="color:#0288D1;">Jalisco:</b> <strong>Birria</strong>  
-                    <br><b>Ingredientes:</b> Carne de chivo o res, chiles guajillo y ancho, ajo, comino, vinagre, jitomate, orégano, canela, sal y pimienta.  
-                    <br><b>Historia:</b> Originaria de Jalisco, es ideal para reuniones y fiestas.  
-                    <br><b>Dato curioso:</b> La birria se sirve comúnmente con tortillas y salsa picante.  
-                </li>
-
-                <li><b style="color:#4CAF50;">México:</b> <strong>Tacos de carnitas</strong>  
-                    <br><b>Ingredientes:</b> Carne de cerdo (pierna, costilla, cueritos), manteca de cerdo, naranja, ajo, sal, Coca-Cola (opcional para caramelizar).  
-                    <br><b>Historia:</b> Originarios de Michoacán, los tacos de carnitas se popularizaron en todo México.  
-                    <br><b>Dato curioso:</b> La carne se cocina en su propia grasa, lo que le da un sabor inconfundible.  
-                </li>
-
-                <li><b style="color:#FF5722;">Michoacán:</b> <strong>Corundas</strong>  
-                    <br><b>Ingredientes:</b> Masa de maíz, manteca de cerdo, crema, queso fresco, hojas de maíz, salsa de jitomate con chile guajillo.  
-                    <br><b>Historia:</b> Se preparan de manera tradicional en el estado de Michoacán, especialmente en festividades.  
-                    <br><b>Dato curioso:</b> A diferencia de las tamales, las corundas tienen forma triangular.  
-                </li>
-
-                <li><b style="color:#1976D2;">Morelos:</b> <strong>Tacos de cecina</strong>  
-                    <br><b>Ingredientes:</b> Cecina de Yecapixtla, tortillas de maíz, aguacate, nopales asados, salsa roja o verde.  
-                    <br><b>Historia:</b> Originarios de la región de Yecapixtla, los tacos de cecina son muy sabrosos y populares.  
-                    <br><b>Dato curioso:</b> La cecina se seca al sol, lo que le da un sabor único.  
-                </li>
-
-                <li><b style="color:#9C27B0;">Nayarit:</b> <strong>Pescado zarandeado</strong>  
-                    <br><b>Ingredientes:</b> Pescado entero (huachinango o pargo), achiote, jugo de naranja y limón, salsa de soya, mantequilla, chiles secos, cebolla y ajo.  
-                    <br><b>Historia:</b> Es un platillo costero muy popular en la región de Nayarit.  
-                    <br><b>Dato curioso:</b> Se prepara en parrillas de madera, lo que le da un sabor ahumado.  
-                </li>
-
-                <li><b style="color:#FFEB3B;">Nuevo León:</b> <strong>Machacado con huevo</strong>  
-                    <br><b>Ingredientes:</b> Carne seca de res (machaca), huevo, jitomate, cebolla, chile serrano, aceite.  
-                    <br><b>Historia:</b> Originario del norte del país, se preparaba con carne seca conservada por los vaqueros.  
-                    <br><b>Dato curioso:</b> Es un desayuno común en los ranchos del norte de México.  
-                </li>
-
-                <li><b style="color:#0288D1;">Oaxaca:</b> <strong>Mole negro</strong>  
-                    <br><b>Ingredientes:</b> Chiles secos (pasilla, mulato, chipotle), chocolate, almendras, ajonjolí, plátano macho, jitomate, ajo, cebolla, especias.  
-                    <br><b>Historia:</b> El mole negro es uno de los más conocidos de la región zapoteca de Oaxaca.  
-                    <br><b>Dato curioso:</b> Su preparación puede tomar varias horas.  
-                </li>
-
-                <li><b style="color:#7B1FA2;">Puebla:</b> <strong>Mole poblano</strong>  
-                    <br><b>Ingredientes:</b> Chiles secos, chocolate, almendras, ajonjolí, plátano macho, tomate, cebolla, ajo, canela, tortilla y bolillo tostado.  
-                    <br><b>Historia:</b> Creado en un convento por monjas en la época colonial.  
-                    <br><b>Dato curioso:</b> Su receta original incluía más de 20 ingredientes.  
-                </li>
-
-                <li><b style="color:#D32F2F;">Querétaro:</b> <strong>Enchiladas queretanas</strong>  
-                    <br><b>Ingredientes:</b> Tortillas de maíz, chile guajillo, carne de pollo o res, cebolla, ajo, queso fresco.  
-                    <br><b>Historia:</b> Este platillo tiene su origen en la región central de México.  
-                    <br><b>Dato curioso:</b> Se preparan con un relleno de carne deshebrada.  
-                </li>
-
-                <li><b style="color:#0288D1;">Quintana Roo:</b> <strong>Sopa de pescado</strong>  
-                    <br><b>Ingredientes:</b> Pescado de la región, jitomate, cebolla, ajo, chile habanero, zanahoria, papas, cilantro.  
-                    <br><b>Historia:</b> Popular en las costas del Caribe mexicano.  
-                    <br><b>Dato curioso:</b> Esta sopa se sirve con una rodaja de limón y salsa picante.  
-                </li>
-
-                <li><b style="color:#7B1FA2;">San Luis Potosí:</b> <strong>Enchiladas potosinas</strong>  
-                    <br><b>Ingredientes:</b> Masa de maíz, chile guajillo, carne de res, tomate, cebolla, ajo, comino, queso fresco.  
-                    <br><b>Historia:</b> Es uno de los platillos más emblemáticos de la región.  
-                    <br><b>Dato curioso:</b> Su nombre proviene de su origen en San Luis Potosí.  
-                </li>
-
-                <li><b style="color:#FF5722;">Sinaloa:</b> <strong>Chilorio</strong>  
-                    <br><b>Ingredientes:</b> Carne de cerdo, chiles secos (pasilla, ancho), ajo, cebolla, comino, cilantro, limón.  
-                    <br><b>Historia:</b> Originario de Sinaloa, se usa en tacos, burritos y otros platillos.  
-                    <br><b>Dato curioso:</b> Se prepara cocinando la carne en salsa de chiles hasta que esté completamente desmenuzada.  
-                </li>
-
-                <li><b style="color:#9C27B0;">Sonora:</b> <strong>Carne asada</strong>  
-                    <br><b>Ingredientes:</b> Carne de res, sal, pimienta, cerveza (opcional), limón, tortillas sobaqueras.  
-                    <br><b>Historia:</b> Tradición de los ranchos ganaderos.  
-                    <br><b>Dato curioso:</b> En Sonora, la carne asada es más que un platillo; es una tradición social.  
-                </li>
-
-                <li><b style="color:#FFEB3B;">Tabasco:</b> <strong>Chiltepe con camarones</strong>  
-                    <br><b>Ingredientes:</b> Chiltepes, camarones, cebolla, ajo, jitomate, cilantro, limón.  
-                    <br><b>Historia:</b> Se prepara tradicionalmente en las zonas costeras del estado.  
-                    <br><b>Dato curioso:</b> El chiltepe es un chile muy picante originario de Tabasco.  
-                </li>
-
-                <li><b style="color:#0288D1;">Tamaulipas:</b> <strong>Vuelve a la vida</strong>  
-                    <br><b>Ingredientes:</b> Mariscos (camarones, ostiones, almejas), jitomate, cebolla, ajo, chile serrano, cilantro.  
-                    <br><b>Historia:</b> Este platillo tiene su origen en las costas de Tamaulipas.  
-                    <br><b>Dato curioso:</b> Se sirve como sopa caliente con jugo de limón.  
-                </li>
-
-                <li><b style="color:#7B1FA2;">Tlaxcala:</b> <strong>Adobo tlaxcalteca</strong>  
-                    <br><b>Ingredientes:</b> Carne de cerdo, chile guajillo, ajo, cebolla, comino, clavo, pimienta, laurel.  
-                    <br><b>Historia:</b> El adobo es una receta tradicional de la región de Tlaxcala.  
-                    <br><b>Dato curioso:</b> Este platillo se acompaña generalmente con arroz o frijoles.  
-                </li>
-
-                <li><b style="color:#FF5722;">Yucatán:</b> <strong>Cochinita pibil</strong>  
-                    <br><b>Ingredientes:</b> Carne de cerdo, achiote, naranja agria, cebolla morada, chile habanero, tortillas de maíz.  
-                    <br><b>Historia:</b> Procede de la cocina tradicional maya, cocinada en un horno subterráneo.  
-                    <br><b>Dato curioso:</b> La cochinita pibil es uno de los platillos más emblemáticos de la gastronomía yucateca.  
-                </li>
-
-                <li><b style="color:#D32F2F;">Zacatecas:</b> <strong>Gorditas de horno</strong>  
-                    <br><b>Ingredientes:</b> Masa de maíz, queso fresco, guisos de chile, frijoles, carne deshebrada, salsas.  
-                    <br><b>Historia:</b> Platillo popular de las zonas rurales zacatecanas.  
-                    <br><b>Dato curioso:</b> Se cocinan en hornos de leña, lo que les da un sabor único.  
-                </li>
-
-            </ul>
-        </font>
-    </p>
-      <p style="text-align: center;">
-        <span style="color: #FFC9C9;">F</span> 
-        <span style="color: #F7CAC9;">r</span>
-        <span style="color: #E4D6F5;">a</span>
-        <span style="color: #C9E4CA;">n</span>
-        <span style="color: #B2FFFC;">c</span>
-        <span style="color: #A1FFC9;">i</span>
-        <span style="color: #99FFCC;">s</span>
-        <span style="color: #C5CAE9;">c</span>
-        <span style="color: #B5B8FF;">o</span>
-    </p>
-
-    <img src="Taco.jpeg" height="150"
-    <h2>Video</h2>
-            <video controls >
-        <source src="México.mp4" type="video/mp4"></source>
-    </video>
-              <section id="seccion3">
-            <h2>Audio</h2>
-    <audio  src="Balazo.m4a" controls autoplay>
+    <!-- Sección de Audio -->
+    <section id="seccion3">
+        <h2>Audio</h2>
+        <audio src="Balazo.m4a" controls autoplay></audio>
+    </section>
 </body>
-    </html>
+</html>
